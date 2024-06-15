@@ -1,0 +1,63 @@
+GET http://localhost:3005/users
+
+###
+POST http://localhost:3005/users
+Content-Type: application/json
+
+{
+    "name":"Vone Doe",
+    "email": "von@email.com",
+    "password": "123456"
+}
+
+###
+DELETE http://localhost:3005/users/1
+
+
+###
+GET http://localhost:3005/users/2
+
+###
+POST http://localhost:3005/partner/users
+Content-Type: application/json
+
+{
+    "name":"Criso Doe",
+    "email": "criso@email.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:3005/auth/login
+Content-Type: application/json
+
+{
+    "email": "criso@email.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:3005/partners
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwibmFtZSI6IkNyaXNvIERvZSIsImVtYWlsIjoiY3Jpc29AZW1haWwuY29tIiwicm9sZXMiOlsiVVNFUiJdLCJjcmVhdGVkQXQiOiIyMDI0LTA2LTE1VDIyOjE1OjQ3LjUwM1oiLCJ1cGRhdGVkQXQiOiIyMDI0LTA2LTE1VDIyOjE1OjQ3LjUwM1oiLCJpYXQiOjE3MTg0ODk3NTgsImV4cCI6MTcxODU4OTc1OH0.hPGjJOnEIu0P0hcj3tkKlF_u0i2CqgEIBB9IowmKmtA
+
+{
+    "name": "Criso Doe"
+}
+
+###
+POST http://localhost:3005/events
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwibmFtZSI6IkNyaXNvIERvZSIsImVtYWlsIjoiY3Jpc29AZW1haWwuY29tIiwicm9sZXMiOlsiVVNFUiJdLCJjcmVhdGVkQXQiOiIyMDI0LTA2LTE1VDIyOjE1OjQ3LjUwM1oiLCJ1cGRhdGVkQXQiOiIyMDI0LTA2LTE1VDIyOjE1OjQ3LjUwM1oiLCJpYXQiOjE3MTg0ODk3NTgsImV4cCI6MTcxODU4OTc1OH0.hPGjJOnEIu0P0hcj3tkKlF_u0i2CqgEIBB9IowmKmtA
+
+{
+    "name": "Evento cris",
+    "description": "Evento 1",
+    "date": "2024-06-12T23:21:34.60"
+}
+
+###
+GET http://localhost:3005/events
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwibmFtZSI6IkNyaXNvIERvZSIsImVtYWlsIjoiY3Jpc29AZW1haWwuY29tIiwicm9sZXMiOlsiVVNFUiJdLCJjcmVhdGVkQXQiOiIyMDI0LTA2LTE1VDIyOjE1OjQ3LjUwM1oiLCJ1cGRhdGVkQXQiOiIyMDI0LTA2LTE1VDIyOjE1OjQ3LjUwM1oiLCJpYXQiOjE3MTg0ODk3NTgsImV4cCI6MTcxODU4OTc1OH0.hPGjJOnEIu0P0hcj3tkKlF_u0i2CqgEIBB9IowmKmtA
+
